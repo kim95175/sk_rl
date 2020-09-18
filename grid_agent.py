@@ -40,14 +40,6 @@ class GridAgent():
         #print("sample_action = ", gym_action) # OrderedDict([('action', 34)])
         encoded_action = self.gym_action_space.from_gym(gym_action)  # 34
         self.num_actions = ACT_SIZE
-        '''
-        print("=======================alll action ==================")
-        for i in range(ACT_SIZE):
-            print("action number = ", i)
-            print(self.converter.convert_act(i))
-        print("buffer_size : ", buffer_size)
-        print("env : ", self.env)
-        '''
 
     # grid observation -> gym observation
     def convert_obs(self, obs):
