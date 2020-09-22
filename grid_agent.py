@@ -29,8 +29,8 @@ class GridAgent():
         # action number 0 = DoNothing 
         self.converter.init_converter(set_line_status=False,   # 40 
                                     change_line_status=True,   # 8
-                                    change_bus_vect=True,  # 59
-                                    set_topo_vect=False, # 58
+                                    change_bus_vect=False,  # 59
+                                    set_topo_vect=True, # 58
                                     ) 
         self.gym_action_space = GymActionSpace(action_space=self.converter)
         ACT_SIZE = len(self.converter.all_actions)
